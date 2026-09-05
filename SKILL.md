@@ -13,7 +13,7 @@ This skill helps students find the best thesis topics from the ESCP MSc programm
 
 | 配置项 | 变量名 | 当前值 |
 |--------|--------|--------|
-| **选题数据源路径** | `{EXCEL_PATH}` | `/Users/a1013/Documents/trae_projects/毕业论文/2026_2027_Thesis topics  Msc programmes.xlsx` |
+| **选题数据源路径** | `{EXCEL_PATH}` | ` ` |
 
 修改后，本文件中所有引用 `{EXCEL_PATH}` 的位置将自动使用新值。
 
