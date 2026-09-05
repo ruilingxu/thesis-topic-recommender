@@ -1,6 +1,6 @@
 # 毕业论文选题推荐助手（Thesis Topic Recommender）
 
-一个用 Claude Code 编写的 Skill：从官方毕业论文选题 Excel 里，按**你的研究方向、简历关键词、偏好导师**做加权打分，推荐 Top 5 选题并生成发给导师的 Shortlist 表格。
+从官方毕业论文选题里，按你的研究方向、简历关键词、偏好导师做加权打分，推荐 Top 5 选题并生成可直接使用的邮件模版。
 
 ## 它做什么
 
@@ -21,7 +21,7 @@ cp SKILL.md ~/.claude/skills/thesis-topic-recommender/
 
 ## 关于数据文件（重要）
 
-Skill 依赖官方选题 Excel（含 1251 个选题、导师邮箱等**内部数据**），**不在本仓库分发**。请：
+Skill 依赖官方选题库，**不在本仓库分发**。请：
 
 1. 打开 `SKILL.md`，把 `{EXCEL_PATH}` 换成你本机选题 Excel 的路径
 2. 运行时把 Excel 放在该路径即可（Skill 每次实时读取，不缓存）
