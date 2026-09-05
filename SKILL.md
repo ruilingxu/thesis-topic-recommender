@@ -1,11 +1,11 @@
 ---
 name: "thesis-topic-recommender"
-description: "Recommends thesis topics from ESCP Berlin MSc programmes thesis topics Excel file based on user's research interests, CV, preferred supervisors, and research methods. Invoke when user wants thesis topic recommendations or help choosing a thesis topic."
+description: "Recommends thesis topics from ESCP MSc programmes thesis topics Excel file based on user's research interests, CV, preferred supervisors, and research methods. Invoke when user wants thesis topic recommendations or help choosing a thesis topic."
 ---
 
 # Thesis Topic Recommender (毕业论文选题推荐)
 
-This skill helps students find the best thesis topics from the ESCP Berlin MSc programmes thesis topics Excel file, based on their personal preferences and background. It also supports generating a structured Shortlist Excel output for final selection.
+This skill helps students find the best thesis topics from the ESCP MSc programmes thesis topics Excel file, based on their personal preferences and background. It also supports generating a structured Shortlist Excel output for final selection.
 
 ## ⚙️ 配置区 (Configuration)
 
@@ -13,7 +13,7 @@ This skill helps students find the best thesis topics from the ESCP Berlin MSc p
 
 | 配置项 | 变量名 | 当前值 |
 |--------|--------|--------|
-| **选题数据源路径** | `{EXCEL_PATH}` | `/Users/a1013/Documents/trae_projects/毕业论文/2026_2027_Thesis topics Berlin Msc programmes.xlsx` |
+| **选题数据源路径** | `{EXCEL_PATH}` | `/Users/a1013/Documents/trae_projects/毕业论文/2026_2027_Thesis topics  Msc programmes.xlsx` |
 
 修改后，本文件中所有引用 `{EXCEL_PATH}` 的位置将自动使用新值。
 
@@ -23,7 +23,7 @@ This skill helps students find the best thesis topics from the ESCP Berlin MSc p
 
 ---
 
-欢迎使用毕业论文选题推荐工具！本工具将帮助您从 ESCP Berlin 校区的 1251 个毕业论文选题中，智能筛选出最适合您的 5 个选题，并为每个选题生成发给导师的邮件模板。
+欢迎使用毕业论文选题推荐工具！本工具将帮助您从 ESCP 校区的 1251 个毕业论文选题中，智能筛选出最适合您的 5 个选题，并为每个选题生成发给导师的邮件模板。
 
 ### 🔄 流程概览（共 4 个阶段）
 
@@ -65,7 +65,7 @@ This skill helps students find the best thesis topics from the ESCP Berlin MSc p
 ## Data Source
 
 The thesis topics Excel file is located at:
-`/Users/a1013/Documents/trae_projects/毕业论文/2026_2027_Thesis topics Berlin Msc programmes.xlsx`
+``
 
 ### Excel Structure (columns in order):
 | Index | Column | Description |
@@ -73,7 +73,7 @@ The thesis topics Excel file is located at:
 | 0 | Supervisor | 导师姓名 |
 | 1 | Email address of supervisor | 导师邮箱 |
 | 2 | Academic Department | 学术院系 |
-| 3 | Campus of Professor | 导师所在校区 (Berlin/Madrid/Paris) |
+| 3 | Campus of Professor | 导师所在校区 (/Madrid/Paris) |
 | 4 | Topic area | 研究领域 (e.g. Sustainability, AI, Diversity, Leadership, Finance, Marketing, Supply Chain, etc.) |
 | 5 | Qualitative/Quantitative research methods | 研究方法 (Qualitative/Quantitative/Mixed/Both/Case Study etc.) |
 | 6 | Title or topic | 选题标题 |
@@ -90,7 +90,7 @@ The thesis topics Excel file is located at:
 ### Data Summary:
 - Total topics: ~1251
 - Unique supervisors: ~47
-- Campuses: Berlin, Madrid, Paris
+- Campuses: , Madrid, Paris
 - Programs: MISM, SUSTM, MSEI, MSDB
 - Research methods: Qualitative, Quantitative, Mixed, Case Study, Literature Review, etc.
 
@@ -121,7 +121,7 @@ Users can select multiple options. If they skip, note "无偏好" and proceed.
 Ask the user to share their CV/resume or briefly describe their academic background, work experience, and key skills. Tell them: "您可以上传简历（PDF/Word/文本），或直接描述您的学术背景、工作经历和核心技能。如果跳过此问题，将仅基于选题本身进行推荐。" If they skip, proceed without CV matching.
 
 **Question 3 — 偏好导师与校区 (Preferred Supervisor & Campus):**
-Ask the user if they have any preferred supervisors or supervisors they want to avoid. Also ask which campus they prefer (Berlin/Madrid/Paris). If they skip, note "无偏好" and proceed.
+Ask the user if they have any preferred supervisors or supervisors they want to avoid. Also ask which campus they prefer (/Madrid/Paris). If they skip, note "无偏好" and proceed.
 
 **Question 4 — 研究方法与项目 (Research Method & Programme):**
 Ask:
