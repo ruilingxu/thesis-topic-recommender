@@ -52,7 +52,7 @@ This skill helps students find the best thesis topics from the ESCP MSc programm
 
 ### ⚡ 快速开始
 
-如果您想跳过信息收集直接浏览选题，只需告诉我您的**项目（MISM/SUSTM/MSEI/MSDB）**和**研究方向**，我会基于最少必要信息为您推荐。
+如果您想跳过信息收集直接浏览选题，只需告诉我您的**项目**和**研究方向**，我会基于最少必要信息为您推荐。
 
 ---
 
@@ -73,7 +73,7 @@ The thesis topics Excel file is located at:
 | 0 | Supervisor | 导师姓名 |
 | 1 | Email address of supervisor | 导师邮箱 |
 | 2 | Academic Department | 学术院系 |
-| 3 | Campus of Professor | 导师所在校区 (/Madrid/Paris) |
+| 3 | Campus of Professor | 导师所在校区 |
 | 4 | Topic area | 研究领域 (e.g. Sustainability, AI, Diversity, Leadership, Finance, Marketing, Supply Chain, etc.) |
 | 5 | Qualitative/Quantitative research methods | 研究方法 (Qualitative/Quantitative/Mixed/Both/Case Study etc.) |
 | 6 | Title or topic | 选题标题 |
